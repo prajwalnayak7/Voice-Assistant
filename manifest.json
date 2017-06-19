@@ -1,0 +1,24 @@
+{
+  "name": " Voice Assistant ",
+  "version": "0.1.1",
+  "manifest_version": 2,
+  "description":" Voice Assistance for visually impaired people ",
+  "icons":{
+	  "64":"icon.png"
+  },
+    "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["popup.js","jquery.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": " your personalized Voice Assistant",
+	"default_icon":"icon.png",
+	"default_popup":"popup.html"
+  },
+  "permissions": [
+		"activeTab",
+        "<all_urls>"
+  ]
+}
