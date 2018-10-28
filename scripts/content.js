@@ -4,6 +4,8 @@
 	$(document).focusin(function(e) {
 	speak(e.target.text);
 	});
+
+        // healper function definition
 		
 	function speak(txt){
 	var synth = window.speechSynthesis;
@@ -16,3 +18,5 @@
 	synth.speak(utterThis);
 	}
 	}
+
+
