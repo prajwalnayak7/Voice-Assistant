@@ -884,6 +884,15 @@ function Sizzle( selector, context, results, seed ) {
 	return select( selector.replace( rtrim, "$1" ), context, results, seed );
 }
 
+$("#kitten").hover(function(){
+
+	$(this).find("img").fadeOut();
+
+}, function() {
+
+	$(this).find("img").fadeIn();
+
+});
 /**
  * Create key-value caches of limited size
  * @returns {function(string, object)} Returns the Object data after storing it on itself with
